@@ -13,6 +13,8 @@ in developing such a framework/tests using the OrangeHRM live demo website.
 Project is created with:
 * Python version 3.10.x
 * Selenium Webdriver version: 3.141.59
+* Atlassian Jira
+* Jenkins on AWS
 	
 ## Setup
 To run this project, install it locally using nnn:
