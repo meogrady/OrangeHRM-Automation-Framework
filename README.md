@@ -15,6 +15,7 @@ Project is created with:
 * Selenium Webdriver version: 3.141.59
 * Atlassian Jira
 * Jenkins on AWS
+* Fedora 35
 	
 ## Setup
 To run this project, install it locally using nnn:
