@@ -18,7 +18,7 @@ Project is created with:
 * Fedora 35
 	
 ## Setup
-To run this project, install it locally using nnn:
+TODO
 
 ```
 $ No setup required
