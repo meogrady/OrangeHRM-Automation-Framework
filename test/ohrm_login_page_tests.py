@@ -17,7 +17,7 @@ def test_ohrm_login_with_valid_credentials():
     ohrm_login.ohrm_submit_button.click()
 
     # Verify that login is successful
-    assert ohrm_landing.ohrm_landing_page_welcome.get_text() == 'Welcome Paul', 'ERROR: Credential mismatch'
+    assert ohrm_landing.ohrm_landing_page_welcome.contains_text('Welcome') == 'Welcome', 'ERROR: Credential mismatch'
 
     driver.quit()
 
