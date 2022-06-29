@@ -26,6 +26,10 @@ class BaseElement(object):
         text = self.web_element.text
         return text
 
+    def contains_text(self, content):
+        text = str(self.web_element.text)
+        return text.find(content)
+
     def attribute(self, attr_name):
         attribute = self.web_element.get_attribute(attr_name)
         return attribute
