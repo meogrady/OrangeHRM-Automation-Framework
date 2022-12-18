@@ -17,7 +17,7 @@ def test_quick_launch_assign_leave(firefox_driver):
 
     # Link 'Assign Leave' Icon from Quick Launch group.
     quick_launch_menu = OhrmQuickLaunchMenu(driver=firefox_driver)
-    time.sleep(1)
+    time.sleep(1)                                                                   # TODO: NEED TO FIX THIS
     quick_launch_menu.ohrm_navigate_to_assign_leave_page().click()
 
     # Get text from page and assert
@@ -28,7 +28,7 @@ def test_quick_launch_assign_leave(firefox_driver):
 
     firefox_driver.quit()
 
-
+'''
 def test_quick_launch_leave_list(firefox_driver):
     pass
 
@@ -47,3 +47,5 @@ def test_quick_launch_my_leave(firefox_driver):
 
 def test_quick_launch_my_timesheet(firefox_driver):
     pass
+
+'''

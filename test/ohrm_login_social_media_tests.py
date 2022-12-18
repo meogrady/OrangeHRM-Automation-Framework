@@ -1,19 +1,21 @@
-import time
 from src.pages.ohrm_login_page import OhrmLoginPage
+import requests
 
 
 def test_ohrm_can_navigate_to_linkedin_page(firefox_driver) -> None:
     """
     Tests that clicking the LinkedIn icon at bottom of
     page result in navigation to the OrangeHRM LinkedIn
-    page.
+    page. Should return status code 200 OK.
     :return: None
     """
-    ohrm_login = OhrmLoginPage(driver=firefox_driver)
+    ohrm_login = OhrmLoginPage(firefox_driver)
     ohrm_login.go()
 
-    ohrm_login.ohrm_login_linkedin_page.click()
-    time.sleep(1)
+    url = ohrm_login.ohrm_login_page_footer_linkedin_link.attribute('href')
+    print(url)
+    response = requests.get(url)
+    assert response.status_code == 200
     firefox_driver.quit()
 
 
@@ -21,14 +23,16 @@ def test_ohrm_can_navigate_to_facebook_page(firefox_driver) -> None:
     """
     Tests that clicking the Facebook icon at bottom of
     page result in navigation to the OrangeHRM Facebook
-    page.
+    page. Should return status code 200 OK.
     :return: None
     """
-    ohrm_login = OhrmLoginPage(driver=firefox_driver)
+    ohrm_login = OhrmLoginPage(firefox_driver)
     ohrm_login.go()
 
-    ohrm_login.ohrm_login_facebook_page.click()
-    time.sleep(2)
+    url = ohrm_login.ohrm_login_page_footer_facebook_link.attribute('href')
+
+    response = requests.get(url)
+    assert response.status_code == 200
     firefox_driver.quit()
 
 
@@ -36,14 +40,16 @@ def test_ohrm_can_navigate_to_twitter_page(firefox_driver) -> None:
     """
     Tests that clicking the Twitter icon at bottom of
     page result in navigation to the OrangeHRM Twitter
-    page.
+    page. Should return status code 200 OK.
     :return: None
     """
-    ohrm_login = OhrmLoginPage(driver=firefox_driver)
+    ohrm_login = OhrmLoginPage(firefox_driver)
     ohrm_login.go()
 
-    ohrm_login.ohrm_login_twitter_page.click()
-    time.sleep(1)
+    url = ohrm_login.ohrm_login_page_footer_twitter_link.attribute('href')
+
+    response = requests.get(url)
+    assert response.status_code == 200
     firefox_driver.quit()
 
 
@@ -51,13 +57,15 @@ def test_ohrm_can_navigate_to_youtube_page(firefox_driver) -> None:
     """
     Tests that clicking the YouTube icon at bottom of
     page result in navigation to the OrangeHRM YouTube
-    page.
+    page. Should get a 200 OK response code.
     :return: None
     """
-    ohrm_login = OhrmLoginPage(driver=firefox_driver)
+    ohrm_login = OhrmLoginPage(firefox_driver)
     ohrm_login.go()
 
-    ohrm_login.ohrm_login_youtube_page.click()
-    time.sleep(1)
+    url = ohrm_login.ohrm_login_page_footer_youtube_link.attribute('href')
+
+    response = requests.get(url)
+    assert response.status_code == 200
     firefox_driver.quit()
 
