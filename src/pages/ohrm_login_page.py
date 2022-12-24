@@ -25,6 +25,7 @@ class OhrmLoginPage(BasePage):
                                            '-button') 
         return BaseElement(self.driver, locator=locator)
 
+    @property
     def ohrm_login_title(self):
         locator = Locator(By.CSS_SELECTOR, 'h5.oxd-text oxd-text--h5 orangehrm-login-title')
         return BaseElement(self.driver, locator=locator)
