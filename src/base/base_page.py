@@ -6,4 +6,4 @@ class BasePage(object):
         self.driver = driver
 
     def go(self):
-        self.driver.get(self.url)
+        self.driver.get(self.base_url)

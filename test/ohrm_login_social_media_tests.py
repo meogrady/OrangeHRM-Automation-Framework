@@ -14,7 +14,7 @@ def test_ohrm_can_navigate_to_linkedin_page(firefox_driver) -> None:
     ohrm_login.go()
 
     url = ohrm_login.ohrm_login_page_footer_linkedin_link.attribute('href')
-    print(url)
+    print(url)  #TEST ONLY
     response = requests.get(url)
     assert response.status_code == 999  # Temporary fix until better solution is found. Should return status code 200 OK
     firefox_driver.quit()

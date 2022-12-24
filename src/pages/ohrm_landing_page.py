@@ -10,6 +10,6 @@ class OhrmLandingPage(BasePage):
 
     @property
     def ohrm_landing_page_welcome(self):
-        locator = Locator(By.CSS_SELECTOR, 'a#welcome')
+        locator = Locator(By.CSS_SELECTOR, 'div.oxd-topbar-header-title h6')
         return BaseElement(driver=self.driver, locator=locator)
 
