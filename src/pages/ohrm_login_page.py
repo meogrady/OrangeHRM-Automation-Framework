@@ -7,48 +7,49 @@ from src.locator.locator import Locator
 
 class OhrmLoginPage(BasePage):
 
-    url = 'https://opensource-demo.orangehrmlive.com/'
+    base_url = 'https://opensource-demo.orangehrmlive.com/'
 
     @property
     def ohrm_username_input(self):
-        locator = Locator(By.CSS_SELECTOR, 'input#txtUsername')
+        locator = Locator(By.CSS_SELECTOR, 'input.oxd-input.oxd-input--active[name="username"]')
         return BaseElement(self.driver, locator=locator)
 
     @property
     def ohrm_password_input(self):
-        locator = Locator(By.CSS_SELECTOR, 'input#txtPassword')
+        locator = Locator(By.CSS_SELECTOR, 'input.oxd-input.oxd-input--active[name="password"]')
         return BaseElement(self.driver, locator=locator)
 
     @property
     def ohrm_submit_button(self):
-        locator = Locator(By.CSS_SELECTOR, 'input#btnLogin')
+        locator = Locator(By.CSS_SELECTOR, 'button.oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login'
+                                           '-button') 
+        return BaseElement(self.driver, locator=locator)
+
+    def ohrm_login_title(self):
+        locator = Locator(By.CSS_SELECTOR, 'h5.oxd-text oxd-text--h5 orangehrm-login-title')
         return BaseElement(self.driver, locator=locator)
 
     @property
     def ohrm_login_error_message(self):
-        locator = Locator(By.CSS_SELECTOR, 'id#spanMessage')
-        return BaseElement(self.driver, locator=locator)
-
-    # TODO: Add code for social media links using etree
-
-    @property
-    def ohrm_login_linkedin_page(self):
-        locator = Locator(By.XPATH, "//img[@alt='LinkedIn OrangeHRM group']")
+        locator = Locator(By.CSS_SELECTOR, 'div.oxd-form-row span')
         return BaseElement(self.driver, locator=locator)
 
     @property
-    def ohrm_login_facebook_page(self):
-        locator = Locator(By.XPATH, "//img[@alt='OrangeHRM on Facebook']")
+    def ohrm_login_page_footer_linkedin_link(self) -> BaseElement:
+        locator = Locator(By.CSS_SELECTOR, 'a[href*="www.linkedin.com"]')
         return BaseElement(self.driver, locator=locator)
 
     @property
-    def ohrm_login_twitter_page(self):
-        locator = Locator(By.XPATH, "//img[@alt='OrangeHRM on twitter']")
+    def ohrm_login_page_footer_facebook_link(self):
+        locator = Locator(By.CSS_SELECTOR, 'a[href*="facebook.com"]')
         return BaseElement(self.driver, locator=locator)
 
     @property
-    def ohrm_login_youtube_page(self):
-        locator = Locator(By.XPATH, "//img[@alt='OrangeHRM on youtube']")
+    def ohrm_login_page_footer_twitter_link(self):
+        locator = Locator(By.CSS_SELECTOR, 'a[href*="twitter.com"]')
         return BaseElement(self.driver, locator=locator)
 
-
+    @property
+    def ohrm_login_page_footer_youtube_link(self):
+        locator = Locator(By.CSS_SELECTOR, 'a[href*="www.youtube.com"]')
+        return BaseElement(self.driver, locator=locator)
