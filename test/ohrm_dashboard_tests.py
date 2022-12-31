@@ -12,6 +12,7 @@ def test_verify_page(firefox_driver):
     ohrm_dashboard = OhrmDashboardPage(firefox_driver)
 
     assert ohrm_dashboard.ohrm_dashboard_page_header_title.get_text() == 'Dashboard'
+    firefox_driver.quit()
 
 '''
 def test_quick_launch_assign_leave(firefox_driver):
