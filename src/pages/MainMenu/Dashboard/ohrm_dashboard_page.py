@@ -4,7 +4,7 @@ from src.base.base_element import BaseElement
 from src.locator.locator import Locator
 
 
-class OhrmLandingPage(BasePage):
+class OhrmDashboardPage(BasePage):
 
     url = 'https://opensource-demo.orangehrmlive.com/index.php/dashboard'
 

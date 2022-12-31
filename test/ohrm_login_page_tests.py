@@ -1,5 +1,5 @@
 from src.pages.ohrm_login_page import OhrmLoginPage
-from src.pages.ohrm_landing_page import OhrmLandingPage
+from src.pages.MainMenu.Dashboard.ohrm_dashboard_page import OhrmLandingPage
 
 
 def test_ohrm_login_with_valid_credentials(firefox_driver):
