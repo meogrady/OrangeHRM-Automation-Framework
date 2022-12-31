@@ -1,5 +1,4 @@
 from src.pages.ohrm_login_page import OhrmLoginPage
-# from src.pages.MainMenu.Leave.ohrm_assign_leave import OhrmAssignLeave
 from src.pages.MainMenu.Dashboard.ohrm_dashboard_page import OhrmDashboardPage
 
 

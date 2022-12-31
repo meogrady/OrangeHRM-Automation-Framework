@@ -5560,3 +5560,27 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
 1672519202440	Marionette	INFO	Stopped listening on port 38365
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1672526796640	geckodriver	INFO	Listening on 127.0.0.1:46769
+1672526797112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39973" "-no-remote" "-profile" "/tmp/rust_mozprofile2t6KVY"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.506117) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1672526797664	Marionette	INFO	Marionette enabled
+1672526797668	Marionette	INFO	Listening on port 42603
+WebDriver BiDi listening on ws://127.0.0.1:39973
+1672526797776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2t6KVY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:39973/devtools/browser/b274561b-dfda-41f3-85dc-f009f742759f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1672526804612	Marionette	INFO	Stopped listening on port 42603
+1672526878004	geckodriver	INFO	Listening on 127.0.0.1:52245
+1672526878008	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55811" "-no-remote" "-profile" "/tmp/rust_mozprofile2Wy89J"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.339063) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1672526878392	Marionette	INFO	Marionette enabled
+1672526878396	Marionette	INFO	Listening on port 39147
+WebDriver BiDi listening on ws://127.0.0.1:55811
+1672526878491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2Wy89J/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55811/devtools/browser/d3abfafa-9aed-4e67-99b0-20d80306571d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1672526885515	Marionette	INFO	Stopped listening on port 39147
