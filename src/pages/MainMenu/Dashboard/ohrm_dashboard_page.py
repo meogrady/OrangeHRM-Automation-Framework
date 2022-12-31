@@ -9,7 +9,7 @@ class OhrmDashboardPage(BasePage):
     url = 'https://opensource-demo.orangehrmlive.com/index.php/dashboard'
 
     @property
-    def ohrm_landing_page_welcome(self):
+    def ohrm_dashboard_page_header_title(self):
         locator = Locator(By.CSS_SELECTOR, 'div.oxd-topbar-header-title h6')
         return BaseElement(driver=self.driver, locator=locator)
 
