@@ -14,7 +14,7 @@ class OhrmDashboardPage(BasePage):
         return BaseElement(driver=self.driver, locator=locator)
 
     def navigate_to_assign_leave_from_quick_launch(self):
-        locator = Locator(By.CSS_SELECTOR, 'button.oxd-icon-button.orangehrm-quick-launch-icon[title="Assign Leave"]')
+        locator = Locator(By.CSS_SELECTOR, 'navi')
         return BaseElement(driver=self.driver, locator=locator)
 
     def navigate_to_leave_list_from_quick_launch(self):
