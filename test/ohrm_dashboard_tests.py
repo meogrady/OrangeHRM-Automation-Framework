@@ -26,7 +26,7 @@ def test_quick_launch_assign_leave(firefox_driver):
 
     # Link 'Assign Leave' Icon from Quick Launch group.
     quick_launch_menu = OhrmDashboardPage(firefox_driver)
-    quick_launch_menu.navigate_to_assign_leave_from_quick_launch().click()
+    quick_launch_menu.navigate_to_assign_leave_from_quick_launch.click()
 
     '''# Get text from page and assert
     assign_leave = OhrmAssignLeave(driver=firefox_driver)
