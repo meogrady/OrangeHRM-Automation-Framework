@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-from src.base.base_page import BasePage
 from src.base.base_element import BaseElement
+from src.base.base_page import BasePage
 from src.locator.locator import Locator
 
 
