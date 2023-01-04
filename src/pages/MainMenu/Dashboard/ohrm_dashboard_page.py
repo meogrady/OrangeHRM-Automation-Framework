@@ -10,6 +10,9 @@ class OhrmDashboardPage(BasePage):
 
     @property
     def ohrm_dashboard_page_header_title(self):
+        """
+           Gets the title of the Dashboard page
+        """
         locator = Locator(By.CSS_SELECTOR, 'div.oxd-topbar-header-title h6')
         return BaseElement(driver=self.driver, locator=locator)
 
