@@ -6,7 +6,7 @@ from src.locator.locator import Locator
 
 class OhrmDashboardPage(BasePage):
 
-    url = 'https://opensource-demo.orangehrmlive.com/index.php/dashboard'
+    dash_url = 'https://opensource-demo.orangehrmlive.com/index.php/dashboard'
 
     @property
     def ohrm_dashboard_page_header_title(self):
@@ -44,4 +44,3 @@ class OhrmDashboardPage(BasePage):
     def navigate_to_my_timesheet_from_quick_launch(self):
         locator = Locator(By.CSS_SELECTOR, 'button.oxd-icon-button.orangehrm-quick-launch-icon[title="My Timesheet"]')
         return BaseElement(driver=self.driver, locator=locator)
-

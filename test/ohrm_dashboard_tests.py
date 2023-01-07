@@ -19,6 +19,7 @@ def test_quick_launch_assign_leave(firefox_driver):
     ohrm_login = OhrmLoginPage(firefox_driver)
     ohrm_login.go()
 
+
     # Log into OrangeHRM
     ohrm_login.ohrm_username_input.set_text('Admin')
     ohrm_login.ohrm_password_input.set_text('admin123')
