@@ -40,6 +40,7 @@ class OhrmLoginPage(BasePage):
         locator = Locator(By.XPATH, './/input[@name="password"]/../../span')
         return BaseElement(self.driver, locator=locator)
 
+    @property
     def ohrn_login_alert_error_message(self):
         locator = Locator(By.CSS_SELECTOR, 'p.oxd-text.oxd-text--p.oxd-alert-content-text')
         return BaseElement(self.driver, locator=locator)
