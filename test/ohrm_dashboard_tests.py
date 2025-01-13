@@ -1,5 +1,6 @@
 from src.pages.ohrm_login_page import OhrmLoginPage
 from src.pages.MainMenu.Dashboard.ohrm_dashboard_page import OhrmDashboardPage
+from src.pages.MainMenu.Leave.ohrm_assign_leave import OhrmAssignLeave
 
 
 def test_verify_page(firefox_driver):
@@ -29,12 +30,12 @@ def test_quick_launch_assign_leave(firefox_driver):
     quick_launch_menu = OhrmDashboardPage(firefox_driver)
     quick_launch_menu.navigate_to_assign_leave_from_quick_launch.click()
 
-    '''# Get text from page and assert
-    assign_leave = OhrmAssignLeave(driver=firefox_driver)
+    # Get text from page and assert
+    assign_leave = OhrmAssignLeave(firefox_driver)
     text = assign_leave.assign_leave_page_title().get_text()
 
     assert text, "Assign Leave"
-    '''
+
 
     firefox_driver.quit()
 
