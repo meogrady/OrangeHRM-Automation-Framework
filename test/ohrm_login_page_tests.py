@@ -79,7 +79,7 @@ def test_ohrm_login_with_invalid_username_valid_password(firefox_driver):
     ohrm_login.ohrm_password_input.set_text('invalid123')
     ohrm_login.ohrm_submit_button.click()
 
-    assert ohrm_login.ohrn_login_alert_error_message().get_text() == 'Invalid credentials'
+    assert ohrm_login.ohrm_login_alert_error_message.get_text() == 'Invalid credentials'
     firefox_driver.quit()
 
 
@@ -95,5 +95,5 @@ def test_ohrm_login_with_valid_username_invalid_password(firefox_driver):
     ohrm_login.ohrm_password_input.set_text('admin124')
     ohrm_login.ohrm_submit_button.click()
 
-    assert ohrm_login.ohrn_login_alert_error_message().get_text() == 'Invalid credentials'
+    assert ohrm_login.ohrm_login_alert_error_message.get_text() == 'Invalid credentials'
     firefox_driver.quit()

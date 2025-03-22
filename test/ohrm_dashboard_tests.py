@@ -3,12 +3,13 @@ from src.pages.MainMenu.Dashboard.ohrm_dashboard_page import OhrmDashboardPage
 from src.pages.MainMenu.Leave.ohrm_assign_leave import OhrmAssignLeave
 
 
-def test_verify_page(firefox_driver):
+def test_verify_can_login_to_dashboard_page(firefox_driver):
     ohrm_login = OhrmLoginPage(firefox_driver)
     ohrm_login.go()
     ohrm_login.ohrm_username_input.set_text('Admin')
     ohrm_login.ohrm_password_input.set_text('admin123')
     ohrm_login.ohrm_submit_button.click()
+
     ohrm_dashboard = OhrmDashboardPage(firefox_driver)
 
     assert ohrm_dashboard.ohrm_dashboard_page_header_title.get_text() == 'Dashboard'
@@ -35,7 +36,6 @@ def test_quick_launch_assign_leave(firefox_driver):
     text = assign_leave.assign_leave_page_title().get_text()
 
     assert text, "Assign Leave"
-
 
     firefox_driver.quit()
 
