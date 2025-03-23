@@ -33,7 +33,7 @@ def test_quick_launch_assign_leave(firefox_driver):
 
     # Get text from page and assert
     assign_leave = OhrmAssignLeave(firefox_driver)
-    text = assign_leave.assign_leave_page_title().get_text()
+    text = assign_leave.get_assign_leave_page_heading_locator().get_text()
 
     assert text, "Assign Leave"
 
